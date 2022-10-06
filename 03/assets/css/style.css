@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Veranda, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1f1f1f;
+}
+
+header {
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section, article {
+    padding-bottom: 32px;
+}
+
+li {
+    margin-left: 40px;
+}
+
+h1 {
+    font-weight:600;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+img {
+    margin-top: 12px;
+}
+
+.iframes {
+    width: 1280px; 
+    height: 720px;
+}
