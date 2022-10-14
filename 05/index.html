@@ -1,20 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+   
+    <div class="container">
+        <form method="post" action="#" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <fieldset>
+                <legend>Загальна інформація</legend>
+                <label for="blocked_field">Заблоковане поле</label>
+                <input type="text" id="blocked_field" disabled value="Нічого не зробити"> 
+                <br><br>
+                <label for="readonly">Поле для читання</label>
+                <input type="text" name="read" id="readonly" readonly value="Тільки прочитати">
+                <br><br>
+                <label for="modelauto">Бренд авто*</label>
+                <input type="text" name="auto" id="modelauto" required placeholder="Volkswagen">
+                <br><br>
+                <label for="user_email">Електрона пошта</label>
+                <input type="email" name="email" id="user_email" placeholder="youremail@mail.com">
+                <br><br>
+                <label for="pass">Пароль</label>
+                <input type="password" id="pass" name="pass">
+                <br><br>
+                <label for="birthdaydate">Дата народження</label>
+                <input type="date" id="birthdaydate" name="date" style="width:172px; height: 21px;">
+                <br><br>
+                <label for="stars">Кількість зірок на небі</label>
+                <input type="number" id="stars" name="stars">
+                <br><br>
+                <div class="gender">
+                     Стать
+                    <label>
+                        <input type="radio" name="gender" value="male"> Чоловік <!--radio кнопки - нейми повинні бути однакові-->
+                    </label>
+                    <label >
+                        <input type="radio" name="gender" value="female"> Жінка
+                    </label>
+                    <label >
+                        <input type="radio" name="gender" value="other"> Щось інше
+                    </label>
+                </div>
+                <br><br>
+                <div class="skills">
+                    <span>Навички</span> 
+                    <label>
+                        <input type="checkbox" name="skills[]" value="html">HTML <!-- Дужки потрібні, щоб відправити декілька варіантів, або робити різні нейми-->
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills[]" value="css">CSS
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills[]" value="js">JS
+                    </label>
+                </div>
+                <br><br>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Інша інформація</legend>
+                <label for="yourcolor">Обери колір</label>
+                <input type="color" id="yourcolor" name="color" value="#E5FF61">
+                <br><br>
+                <label for="yourphone">Номер телефону</label>
+                <input type="tel" id="yourphone" name="phonenumber" placeholder="+3808888888">
+                <br><br>
+                <label for="lessontime">Час заняття</label>
+                <input type="time" name="time" id="lessontime">
+                <br><br>
+                <label for="siteurl">Улюблений сайт</label>
+                <input type="url" id="siteurl" name="site" placeholder="www.example.com.ua">
+                <br><br>
+                <label for="quality">Якість занять</label>
+                <input type="range" name="qualityless" id="quality">
+                <br><br>
+                <label for="avatar">Фотографія</label>
+                <input type="file" name="avatar" id="avatar"> <!--якщо у формі є хоч 1 <input type="file" то потрібно додати до тегу <form> атрибут enctype="multipart/form-data" без цього атрибуту файли не відправляються>-->
 
-   <form method="get" action="#">
-    <input type="text">
-    <br>
-    <button type="submit">Search</button>
-    
+            </fieldset>
 
-   </form> 
+            <fieldset>
+                <legend>Інші варіанти</legend>
+                <label for="drinks">Напої</label>
+                <select name="drinks" id="drinks">
+                    <option>-=Обери свій=-</option>
+                    <option value="tea">Чай</option>
+                    <option value="coffe">Кава</option>
+                    <option value="juice">Сік</option>
+                </select>
+                <br><br>
+                <label for="drinks2">Обери напій</label>
+                <select name="drinks[]" id="drinks2" multiple size="8"> <!--multiple для того, щоб обрати декілька варіантів-->
+                    <optgroup label="Безалкогольні">
+                        <option value="tea">Чай</option>
+                        <option value="coffe">Кава</option>
+                        <option value="juice">Сік</option>
+                    </optgroup>
+                    <optgroup label="Алкогольні">
+                        <option value="beer">Пиво</option>
+                        <option value="vodka">Горілка</option>
+                        <option value="martini">Мартіні</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for="comment">Залиш коментар</label>
+                <textarea name="msg" id="comment" placeholder="Сюди можна написати текст в 8 рядків по 50 символів" cols="50" rows="8" ></textarea> <!--Для розміру краще вказувати width and height, щоб сходилося ыз дизайном -->
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Кпопки</legend>
+                <button type="submit">Відправити</button>
+                <button type="reset">Скинути</button>
+                <button type="button">Звичайна кнопка</button>
+                <button disabled="disabled">Не працює</button>
+            </fieldset>
+                    
+        </form>
+    </div>
+
+  
     
 </body>
 </html>

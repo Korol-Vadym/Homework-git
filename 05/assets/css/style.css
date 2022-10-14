@@ -1,0 +1,30 @@
+label {
+    width: 200px;
+    display: inline-block;
+
+}
+
+.gender label {
+    margin-left: 150px;
+    width: auto;
+    
+}
+
+.skills label {
+    margin-left: 131px;
+    width: auto;
+
+}
+
+body {
+    font-family:open sans, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 970px;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+
