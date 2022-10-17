@@ -1,4 +1,4 @@
-*{
+*{ /* є питання! не вийшо розмітити зірочки та іконки соц.мереж. А також марджин топ гуляє на 5 пікселів*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,17 +10,28 @@ html, body {
 }
 
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #070707;
     font-size: 18px;
     line-height: 25px;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+ 
+}
+
 .container  {
     width: 90%;
     max-width: 970px;
     margin: 0 auto;
+  
+
     
 }
 
@@ -52,3 +63,246 @@ body {
 .main-menu ul li a:hover {
     color: #070707;
 }
+
+/*=Main=*/
+
+
+main {
+    margin-top: 12px;
+}
+
+/*=Denis Novik*/
+.first {
+    height: 497px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+    margin-bottom: 45px; /*!! в Дизайні 50px, але так рівно стоїть*/
+    margin-top: 0;
+}
+
+.novik-img {
+    
+    width: 970px;
+    height: 387px;
+}
+/*=№Denis Novik*/
+
+/*=About me*/
+
+.gray_bg    {
+
+    background-color: #F6F6F6;
+}
+
+.about_me {
+    height: 500px;
+    
+}
+
+.titles {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Open Sans';
+}
+
+.bio    {
+    text-align: center;
+    width: 480px;
+    margin: 45px 245px 100px;
+}
+
+.bio p {
+    margin-bottom: 30px;
+}
+
+.bio p*:last-child {
+    margin-bottom: 0;
+}
+
+/*=#About me*/
+
+/*=Skills=*/
+
+.skills_con {
+    height: 564px;
+}
+
+.skills_con p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cap_name {
+    color: #828282;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em
+}
+
+
+.skills-list {
+    font-size: 0;
+    margin-top: 45px;
+}
+
+.skills-list li {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 97px;
+    width: 169.5px;
+    height: 230px;
+    text-align: center;
+}
+
+.skills-list li.last {
+    margin-right: 0;
+}
+
+.star_ic {
+    margin-right: 3px;
+}
+
+.gray_ic {
+    opacity: 0.25;
+}
+
+/*=#Skills=*/
+
+/*=PORTFOLIO=*/
+
+.port_con {
+    height: 2268px;
+}
+
+.fs_pic {
+    margin-top: 45px;
+}
+
+.text-comp{
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+.text-comp a {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+    
+
+}
+
+.text-comp a:hover {
+    color: #070707;
+
+}
+
+.reebraun_pic {
+    margin-top: 70px;
+}
+
+/*=#PORTFOLIO=*/
+
+/*=Footer=*/
+
+.contacts {
+    margin-top: 100px;
+    height: 400px;
+    
+}
+
+.conts {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+
+.button-wrap {
+   margin-top: 55px;
+   margin-left: 395px;
+}
+
+.btn    {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    background-color: #070707;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    border: solid 2px #070707;
+    cursor: pointer;
+    border-radius: 22px;
+    padding: 0 16px;
+    transition: all 0.2s ease; /* тільки в класі, в hover - неможна*/
+    font-family: 'Open Sans', sans-serif; /* кнопки не успадковують шрифти, треба прописувати */
+}
+
+.social-list li {
+    display: inline-block;
+    margin-right: 36px;
+    
+
+
+}
+
+.social-list li.last {
+    margin-right: 0;
+}
+
+.social-list {
+    
+    margin-top: 30px;
+    width: 310px;
+    height: 40px;
+    margin-left: 330px;
+    
+}
+
+
+.btn:hover {
+    background-color: #fff;
+    color: #070707;
+}
+
+
+
+.endtxt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 60px;
+    color: #828282;
+}
+
+
+
