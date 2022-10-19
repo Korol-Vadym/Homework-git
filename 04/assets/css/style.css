@@ -283,7 +283,7 @@ h3 {
     margin-right: 50px;
 }
 
-.social-list li.last {
+.social-list li:last-child {
     margin-right: 0;
 }
 
