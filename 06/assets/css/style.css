@@ -21,7 +21,7 @@ body {
 
 .container  {
     width: 90%;
-    max-width: 970px;
+    max-width: 534px;
     margin: 0 auto;
 }
 /*=Header=*/
@@ -75,7 +75,7 @@ h1 {
     /*line-height: 13px;*/
 }
 
-label [type="checkbox"] {
+input[type="checkbox"] {
     width: 19px;
     height: 19px;
     margin-top: 12px;
