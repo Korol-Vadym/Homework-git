@@ -53,13 +53,42 @@ h1 {
     padding-top: 20px;
 }
 
+.shopping-list li:nth-child(2n) {
+    background-color: #7A7593;
+}
+
+
+.shopping-list li:hover {
+    background-color: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+
+.mini_text::before {
+    content: "(";    /*!! обов'зково "content" */
+}
+
+.mini_text::after {
+    content: ")";
+}
+
+.shopping-list li:active {
+    background-color: #FF8984;
+}
+
+li {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
 .shopping-list {
     width: 534px;
     background-color: #88839E;
     margin: 0 auto;
     font-weight: 400;
     font-size: 18px;
-    /*line-height: 21px;*/
     color: #FFF;
 
 }
@@ -69,10 +98,13 @@ h1 {
 }
 
 
+
 .mini_text {
     font-weight: 400;
     font-size: 11px;
-    /*line-height: 13px;*/
+    line-height: 13px;
+    vertical-align: middle;
+    margin-left: 3px;
 }
 
 input[type="checkbox"] {
@@ -82,6 +114,20 @@ input[type="checkbox"] {
     margin-bottom: 14px;
     margin-left: 12px;
     vertical-align: middle;
+
+}
+
+input[type="checkbox"]:checked {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+
+
+input[type="checkbox"]:checked ~ span {
+ 
+    text-decoration: line-through;
+    color: #9B96AC;
 }
 
 
