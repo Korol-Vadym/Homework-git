@@ -61,7 +61,7 @@ h1 {
     border-top: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
     transition: all .1s ease-in;
-    cursor: pointer;
+    
 }
 
 .mini_text::before {
@@ -79,6 +79,7 @@ h1 {
 li {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+    
 }
 
 .shopping-list {
@@ -88,10 +89,16 @@ li {
     font-weight: 400;
     font-size: 18px;
     color: #FFF;
+    cursor: pointer;
+    
 }
 
 .item-text {
     margin-left: 16px;
+}
+
+label {
+    cursor: pointer;
 }
 
 .mini_text {
@@ -100,6 +107,7 @@ li {
     line-height: 13px;
     vertical-align: middle;
     margin-left: 3px;
+    
 }
 
 input[type="checkbox"] {
@@ -109,7 +117,11 @@ input[type="checkbox"] {
     margin-bottom: 14px;
     margin-left: 12px;
     vertical-align: middle;
+    cursor: pointer;
+    
 }
+
+
 
 input[type="checkbox"]:checked {
     text-decoration: line-through;
