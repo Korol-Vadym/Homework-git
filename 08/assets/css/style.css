@@ -39,47 +39,43 @@ header {
 
 .header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.logo {
-    padding-top: 16px;
+.img-logo {
+    padding-top: 25px;
 }
-
+ 
 .menu-list li {
     display: inline-block;
 }
 
-nav {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+.main-menu {
+    padding-top: 27px;
+    margin-left: 16px;
 }
 
-.main-menu {
-    margin-top: 18px;
-    margin-left: 198px;
+.buttons-head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+}
+
+.btn2 {
+    margin-left: 32px;
 }
 
 ul li a {
     text-decoration: none;
     color: #2F281E;
     margin-right: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 ul li a:hover {
     color: #FF9900;
-}
-
-.button1 {
-    margin-left: 183px;
-    margin-top: 17px;
-}
-
-.button2 {
-    margin-left: 31px;
-    margin-top: 18px;
 }
 
 .btn    {
