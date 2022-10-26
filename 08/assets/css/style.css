@@ -261,12 +261,10 @@ h1 {
 .benefits-container {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .container-text {
     width: 525px;
-    
 }
 
 .benefits-title {
@@ -282,8 +280,6 @@ h1 {
     line-height: 44px;
     margin-bottom: 21px;
 }
-
-
 
 .title-p {
     font-weight: 500;
@@ -315,3 +311,64 @@ h1 {
 }
 
 /*=#Benefits*/
+
+/*=Product=*/
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.img-product {
+    margin-right: 125px;
+}
+
+.product-title {
+    margin-top: 48px;
+}
+
+.product-title, .product-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.product-p {
+    margin-bottom: 40px;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+
+.product-items {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.item-icon img{
+    margin-right: 30px;
+    margin-top: 8px;
+}
+
+/*=#Product=*/
+
+
+
+
+
+
