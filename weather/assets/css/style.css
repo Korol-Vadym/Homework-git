@@ -53,6 +53,7 @@ h1  {
     font-size: 0;
     padding: 2px;
     background-color: #FFF;
+    
 }
 
 .weather-list li {
@@ -188,11 +189,14 @@ h1  {
 
 ul:hover li {
     opacity: .5;
+    transition: all .1s ease-in;
+    
 }
 
 ul:hover li:hover {
     opacity: 1;
     cursor: pointer;
+    transition: all .1s ease-in;
 }
 
 .temp {
