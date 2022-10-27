@@ -15,9 +15,10 @@ ul, ol {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
     background: #FFFFFF;
 }
 
@@ -65,7 +66,7 @@ header {
     margin-left: 32px;
 }
 
-ul li a {
+.menu-list li a {
     text-decoration: none;
     color: #2F281E;
     margin-right: 16px;
@@ -125,9 +126,7 @@ ul li a:hover {
 
 /*=First screen*/
 .first-screen {
-    
     padding-top: 70px;
-    
 }
 
 
@@ -179,7 +178,7 @@ h1 {
 /*=Features=*/
 .features {
     background-image: url(../img/bg.png);
-     background-size: contain;
+    background-size:cover;
      background-position: center;
      background-repeat: no-repeat;
 }
@@ -206,14 +205,11 @@ h1 {
 .items-list h2 {
     font-weight: 600;
     font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 16px;
+    margin-top: 31px;
+    margin-bottom: 18px;
 }
 
-.items-list p {
-    font-weight: 500;
-    font-size: 16px;
-}
+
 
 .item {
    margin-right: 40px;
@@ -226,7 +222,7 @@ h1 {
 
 .button4 {
     text-align: center;
-    padding-top: 66px;
+    padding-top: 69px;
     margin-left: 10px;
     padding-bottom: 74px;
 }
@@ -265,12 +261,10 @@ h1 {
 
 .container-text {
     width: 525px;
+    padding-top: 21px;
 }
 
 .benefits-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
     padding-top: 21px;
 }
 
@@ -282,13 +276,11 @@ h1 {
 }
 
 .title-p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    
     margin-bottom: 40px;
 }
 
-.container-texts .text-items li h3 {
+.container-texts .text-items li {
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
@@ -304,9 +296,7 @@ h1 {
  }
 
 .text-items p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    
     margin-bottom: 30px;
 }
 
@@ -319,6 +309,10 @@ h1 {
     padding-top: 90px;
 }
 
+.dscr-product {
+    padding-top: 48px;
+}
+
 .img-product {
     margin-right: 125px;
 }
@@ -327,12 +321,7 @@ h1 {
     margin-top: 48px;
 }
 
-.product-title, .product-p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
-}
+
 
 .product-p {
     margin-bottom: 40px;
@@ -347,9 +336,7 @@ h1 {
 }
 
 .product-items {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+   
     display: flex;
     flex-direction: column;
 }
@@ -367,8 +354,148 @@ h1 {
 
 /*=#Product=*/
 
+/*=Marketers=*/
+
+.marketers {
+    padding-top: 100px;
+}
+
+.marketers-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-text-mark {
+    width: 486px;
+    padding-top: 40px;
+}
+
+.text-items-mark li {
+    margin-bottom: 30px;
+}
+
+.text-items-mark li:last-child {
+    margin-bottom: 0;
+}
+
+.container-text-mark h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+.container-text-mark h4 {
+    margin-bottom: 12px;
+}
+
+.title-p-mark {
+    margin-bottom: 40px;
+}
+
+/*=#Markers=*/
 
 
+/*Footer*/
 
+.footer {
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+    width: 100%;
+    margin-top: 100px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5, label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 31px;
+    padding-top: 68px;
+}
+
+input {
+    margin-top: 22px;
+    margin-bottom: 25px;
+    width: 340px;
+    height: 50px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+}
+ 
+ .footer-container a {
+    text-decoration: none;
+    color: #544837;  
+ }
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-logo img {
+    padding-top: 43px;
+}
+
+.footer-container div {
+    margin-right: 102px;
+}
+
+.links  {
+    width: 135px;
+}
+
+.links li {
+    margin-bottom: 15px;
+}
+
+.stuff li {
+    margin-bottom: 15px;
+}
+.stuff {
+    width: 133px;
+}
+
+.footer-container div:last-child {
+     margin-right: 0;
+}
+
+.form {
+    width: 340px;
+    padding-top: 68px;
+}
+
+ .btn5 {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-color: #FF9900;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid transparent;
+ }
+
+ .btn5:hover {
+    background-color: #fff;
+    color: #FF9900;
+    border: 1px solid #FF9900;
+}
 
