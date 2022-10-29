@@ -189,6 +189,10 @@ h1 {
     padding-top: 99px;
 }
 
+h3 {
+    color: #2F281E;
+}
+
 .title-features h3 {
     font-weight: 700;
     font-size: 36px;
@@ -273,6 +277,7 @@ h1 {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 21px;
+    color: #2F281E;
 }
 
 .title-p {
@@ -311,6 +316,10 @@ h1 {
 
 .dscr-product {
     padding-top: 48px;
+}
+
+.dscr-product h2 {
+    color: #2F281E;
 }
 
 .img-product {
@@ -383,6 +392,7 @@ h1 {
     font-size: 36px;
     margin-top: 6px;
     margin-bottom: 24px;
+    color: #2F281E;
 }
 
 .container-text-mark h4 {
@@ -393,15 +403,20 @@ h1 {
     margin-bottom: 40px;
 }
 
-/*=#Markers=*/
+.image-marketers {
+    padding-bottom: 100px;
+}
 
+/*=#Markers=*/
+main {
+    border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
+}
 
 /*Footer*/
 
 .footer {
-    border-top: 1px solid rgba(188, 208, 229, 0.496913);
     width: 100%;
-    margin-top: 100px;
+    padding-bottom: 70px;
 }
 
 .footer-container {
@@ -447,7 +462,7 @@ input::placeholder {
 }
 
 .footer-logo img {
-    padding-top: 43px;
+    padding-top: 69px;
 }
 
 .footer-container div {
