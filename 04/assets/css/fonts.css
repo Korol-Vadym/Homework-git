@@ -1,0 +1,16 @@
+/*Gilroy medium*/
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url(../fonts/gilroy-medium/Gilroy-Medium.woff) format('woff'),
+        url(../fonts/gilroy-medium/Gilroy-Medium.woff2) format('woff2');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url(../fonts/gilroy-bold/Gilroy-Bold.woff) format('woff'),
+        url(../fonts/gilroy-bold/Gilroy-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;     
+}
