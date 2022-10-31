@@ -185,4 +185,6 @@ img {
 
 img:hover {
     opacity: 1;
+    transition: all .1s ease-in;
+    
 }
