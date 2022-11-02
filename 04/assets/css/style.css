@@ -11,7 +11,7 @@ html, body {
 
 body {
     background-color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gilroy Medium';
     color: #070707;
     font-size: 18px;
     line-height: 25px;
@@ -30,9 +30,6 @@ img {
     width: 90%;
     max-width: 970px;
     margin: 0 auto;
-  
-
-    
 }
 
 #header {
@@ -43,6 +40,7 @@ img {
 #header .container {
     border-bottom: 1px solid #828282;
 }
+
 
 .main-menu ul {
     list-style: none;
@@ -75,12 +73,26 @@ main {
 
 
 h1 {
+    font-family: 'Gilroy Bold';
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
     color: #070707;
     margin-bottom: 45px; /*!! в Дизайні 50px, але так рівно стоїть*/
     margin-top: 0;
+}   
+
+h3 {
+    font-family: 'Gilroy Bold';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+.novik-img {
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
 
@@ -165,9 +177,14 @@ h1 {
 }
 
 .raiting-list {
-    font-size: 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+}
+
+.icon-star-full {
+    font-size: 26px;
 }
 
 .raiting-list img {
@@ -273,7 +290,6 @@ h3 {
 
 
 .social-list {
-    font-size: 0;
     margin-top: 30px;
     text-align: center;
 }
@@ -285,6 +301,14 @@ h3 {
 
 .social-list li:last-child {
     margin-right: 0;
+}
+
+.social-list li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
 }
 
 
@@ -299,4 +323,34 @@ h3 {
     padding-bottom: 100px;
 }
 
+.icon-linkedin2 {
+    border: 4px solid #070707;
+    font-size: 32px;
+    color: #070707;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+.icon-instagram {
+    font-size: 48px;
+    color: #070707;
+    position: relative;
+    top: 7px;
+}
+
+
+.icon-behance {
+    border: 4px solid #070707;
+    font-size: 32px;
+    color: #070707;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+.icon-dribbble {
+    font-size: 48px;
+    color: #070707;
+    position: relative;
+    top: 7px;
+}
 /*=#Footer=*/
