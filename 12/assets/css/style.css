@@ -16,6 +16,11 @@ body {
   font-size: 28px;
   line-height: 48px;
   color: #000;
+  background-image: url(../img/bg-picture.png);
+  background-repeat: no-repeat;
+  background-position-x: 1043px;
+  background-position-y: 150px;
+  background-attachment: fixed;
 }
 
 /*=Header=*/
@@ -121,11 +126,6 @@ ul li:last-child {
 main {
   width: calc(100% - 415px);
   padding-top: 80px;
-  background-image: url(../img/bg-picture.png);
-  background-repeat: no-repeat;
-  background-position-x: 1043px;
-  background-position-y: 150px;
-  background-attachment: fixed;
 }
 
 /*=Chapter-1*/
