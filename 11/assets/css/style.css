@@ -27,22 +27,22 @@ img {
 h1 {
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 60px;
   line-height: 66px;
   color: #FFCC00;
   text-transform: uppercase;
   margin-bottom: 31px;
+  font-size: 3.75em;
 }
 
 h3 {
   font-family: "Raleway";
   font-weight: 500;
-  font-size: 18px;
   line-height: 24px;
   color: #898F8F;
   text-transform: uppercase;
   padding-top: 121px;
   margin-bottom: 15px;
+  font-size: 1.125em;
 }
 
 .img-header {
@@ -135,9 +135,9 @@ ul {
 ul li {
   display: inline-block;
   color: #CCCCCC;
-  font-size: 12px;
   text-decoration: none;
   margin-right: 5px;
+  font-size: 12px;
 }
 ul li a {
   color: #CCCCCC;
@@ -145,7 +145,7 @@ ul li a {
   text-decoration: none;
   border: 2px solid #CCC;
   border-radius: 50%;
-  padding: 7px;
+  padding: 7px 8px;
 }
 ul li a:hover {
   cursor: pointer;
@@ -153,8 +153,12 @@ ul li a:hover {
   border-color: #FFCC00;
 }
 
+ul li:nth-child(3) a {
+  padding: 7px 9px;
+}
+
 .icon-google-plus {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .right-container {
@@ -166,7 +170,7 @@ ul li a:hover {
 h2 {
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 42px;
   padding-top: 71px;
   color: #666;
@@ -186,7 +190,7 @@ h2::after {
 .r-title {
   font-family: "Raleway";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 36px;
   color: #666;
 }
@@ -194,7 +198,7 @@ h2::after {
 p {
   font-family: "Raleway";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 24px;
   color: #333;
   position: relative;
@@ -235,7 +239,7 @@ p {
 .border-link a span {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 14px;
   text-transform: uppercase;
   text-decoration: none;

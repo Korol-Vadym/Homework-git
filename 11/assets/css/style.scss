@@ -1,4 +1,8 @@
+$base-size: 16;
 
+@mixin fz($size_px) {
+   font-size: ($size_px / $base-size) * 1em;
+}
 
 * {
     margin: 0;
@@ -28,22 +32,22 @@ img {
 h1 {
    font-family: 'Roboto';
    font-weight: 900;
-   font-size: 60px;
    line-height: 66px;
    color: #FFCC00;
    text-transform: uppercase;
    margin-bottom: 31px;
+   @include fz(60);
 }
 
 h3 {
    font-family: 'Raleway';
    font-weight: 500;
-   font-size: 18px;
    line-height: 24px;
    color: #898F8F;
    text-transform: uppercase;
    padding-top: 121px;
    margin-bottom: 15px;
+   @include fz(18);
 }
 
 .img-header {
@@ -138,16 +142,16 @@ ul {
    & li{
       display: inline-block;
       color:#CCCCCC;
-      font-size: 12px;
       text-decoration: none;
       margin-right: 5px;
+      font-size: 12px;
       & a{
          color:#CCCCCC;
          font-size: 12px;
          text-decoration: none;
          border: 2px solid #CCC;
          border-radius: 50%;
-         padding: 7px;
+         padding: 7px 8px;
          &:hover {
             cursor: pointer;
             color: #FFCC00;
@@ -157,8 +161,12 @@ ul {
    }
 }
 
+ul li:nth-child(3) a {
+   padding: 7px 9px;
+}
+ 
 .icon-google-plus {
-   font-size: 12px;
+   @include fz(12);
 }
 
 .right-container {
@@ -170,7 +178,7 @@ ul {
 h2 {
    font-family: 'Roboto';
    font-weight: 900;
-   font-size: 36px;
+   @include fz(36);
    line-height: 42px;
    padding-top: 71px;
    color: #666;
@@ -191,7 +199,7 @@ h2 {
 .r-title {
    font-family: 'Raleway';
    font-weight: 400;
-   font-size: 24px;
+   @include fz(24);
    line-height: 36px;
    color: #666;
    
@@ -200,7 +208,7 @@ h2 {
 p {
    font-family: 'Raleway';
    font-weight: 500;
-   font-size: 14px;
+   @include fz(14);
    line-height: 24px;
    color: #333;
    position: relative;
@@ -242,7 +250,7 @@ p {
       & span{
          font-family: 'Open Sans';
          font-weight: 700;
-         font-size: 14px;
+         @include fz(14);
          line-height: 14px;
          text-transform: uppercase;
          text-decoration: none;
