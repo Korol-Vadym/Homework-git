@@ -33,11 +33,6 @@ h1, h2{
     letter-spacing: 0.05em;
 }
 
-.grid img {
-
-    overflow: hidden;
-    border-radius: 20px;
-}
 
 .grid   {
     display: grid;
@@ -83,11 +78,6 @@ h1, h2{
     grid-template-rows: repeat(4, 370px );
     gap: 30px;
 }
-
-.grid2 img {
-    overflow: hidden;
-    border-radius: 20px;
-}
  
 .item1-1 {
     grid-column: 1/2;
@@ -123,11 +113,6 @@ h1, h2{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 370px);
     gap: 30px;
-}
-
-.grid3 img {
-    overflow: hidden;
-    border-radius: 20px;
 }
 
 .item2-1 {
@@ -179,12 +164,121 @@ h1, h2{
 }
 
 img {
-    opacity: .7;
-    cursor: pointer;
+    transition: all .2s ease-in;
+    
 }
 
-img:hover {
+
+.pic {
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+    opacity: 0.8;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.pic::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+}
+
+.pic:hover {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
     opacity: 1;
-    transition: all .1s ease-in;
+}
+
+.pic:hover::before {
+    background: linear-gradient(to top, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+    z-index: 3;
+}
+
+.pic:hover .btns-wrap {
+    opacity: 1;
+}
+
+.pic:hover .btn-like {
+    transform: translate(0, 0);
+}
+
+.pic:hover .btn-download {
+    transform: translate(0, 0);
+}
+
+.pic:hover img {
+    transform: scale(1.1);
+}
+
+.info-wrap {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 0;
+    z-index: 5;
+}
+
+.author {
+    font-weight: 500;
+}
+
+.btns-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all .2s ease;
     
+}
+
+.btn {
+    display: inline-flex;
+    border: none;
+    background-color: rgba(224,224,224, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: all .2s ease;
+    z-index: 5;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #fff;
+
+}
+
+.btn-like {
+    transform: translate(-65px, -65px);
+    transition: all .2s ease;
+}
+
+.btn-download {
+    transform: translate(65px, -65px);
+    transition: all .2s ease;
+}
+
+.portrait {
+    padding-bottom: 120px;
 }
