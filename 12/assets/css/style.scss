@@ -55,6 +55,9 @@ header {
     line-height: 28px;
     color: #000;
     letter-spacing: 0.04em;
+    &:hover {
+        color: darkslateblue;
+    }
 }
 
 .nav    {

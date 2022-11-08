@@ -55,6 +55,9 @@ header {
   color: #000;
   letter-spacing: 0.04em;
 }
+.staatliches:hover {
+  color: darkslateblue;
+}
 
 .nav {
   margin-right: 549px;

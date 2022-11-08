@@ -62,3 +62,11 @@
   src: local(""), url("../fonts/ptsans/pt-sans-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsans/pt-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/ptsans/pt-sans-v17-latin-700.woff") format("woff"), url("../fonts/ptsans/pt-sans-v17-latin-700.ttf") format("truetype"), url("../fonts/ptsans/pt-sans-v17-latin-700.svg#PTSans") format("svg");
   /* Legacy iOS */
 }
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
