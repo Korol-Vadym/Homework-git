@@ -97,7 +97,6 @@ h1::before {
   padding: 20px 15px 18px 15px;
 }
 .cards .grid .pic {
-  overflow: hidden;
   border-radius: 8px;
   transition: all 1s ease;
 }
