@@ -61,12 +61,20 @@ input[type=text],
 input[type=email],
 input[type=number],
 input[type=tel],
-input[type=file] {
+input[type=file],
+select {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
     width: 100%;
     height: 38px;
+    font-family: 'Inter';
+    @include fz(15);
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    padding: 7px 10px 7px 10px;
+    cursor: pointer;
     &:focus {
         outline: none;
         border: 1px solid #007BFF;
@@ -83,27 +91,473 @@ label {
     letter-spacing: -.2px;
 }
 
-
+/*=Left form=*/
 .names {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-bottom: 16px;
     .first-name {
+        margin-left: 34px;
+    }
+    .first-name, .last-name {
+        width: 245px;
         padding-top: 15px;
         margin-right: 12px;
+    }
+    
+}
+
+.email-field {
+    margin-left:36px ;
+    margin-bottom: 15px;
+    input {
+       width: calc(100% - 36px);
+        margin-bottom: 6px;
         
     }
-    .last-name {
-        padding-top: 15px;
+    span  {
+        @include fz(13);
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: #969696;
+        display: inline-block;
+    }   
+}   
+
+.gender {
+    margin-left: 36px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 9px;
+}
+
+input[type=radio] {
+    display: none;
+}
+input[type=radio] + label::before {
+    content: '';
+    width: 20px;
+    height: 20px ;
+    background: #fff;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: -3px;
+}
+
+input[type=radio]:checked + label::before {
+    background-color: $theme-color;
+    left: -1px;
+}
+
+input[type=radio] + label {
+    position: relative;
+    padding-left: 28px;
+  
+}
+
+input[type=radio] + label::after {
+    content: '';
+    width: 8px;
+    height: 8px ;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    display: none;
+   
+}
+
+input[type=radio]:checked + label::after {
+    display: inline-block;
+}
+
+.label-male {
+    margin-right: 21px;
+   
+}
+
+
+
+.location-wrap {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 21px;
+
+    .country, .city {
+        width: 245px;
+    }
+    .country {
+        margin-left: 36px;
+        margin-right: 9px;
+        
+    }
+}
+
+
+.btn-wrap   {
+    margin-left: 36px;
+    margin-bottom: 22px;
+    .btn1    {
+        display: inline-block;
+        width: 500px;
+        height: 38px;
+        background-color: $theme-color;
+        @include fz(15);
+        font-weight: 500;
+        line-height: 22px;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: 'Roboto';
+        letter-spacing: -0.1px;
+        color: #fff;
+          &:hover {
+            background-color: #fff;
+            color: $theme-color;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid black;
+        }
     }
 
+}
+
+.policy {
+    margin: 0 auto;
+    text-align:center;
+    @include fz(13);
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+    width: calc(100% - 180px);
+    margin-bottom: 20px;
+    a {
+        font-family: 'Inter';
+        @include fz(13);
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: $theme-color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.footer1 {
+    width: calc(100% - 72px);
+    border-top: 1px solid #E4E4E4;
+    margin: 0 auto;
+    text-align: center;
+    .footer1-text   {
+        padding-top: 20px;
+        span {
+            @include fz(15);
+            line-height: 22px;
+            text-align: right;
+            letter-spacing: -0.2px;
+            color: #545454;
+            margin-right: 17px
+        }
+        a {
+            @include fz(15);
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.1px;
+            color: $theme-color;
+            text-decoration: none;
+            &:hover {
+                color: purple;
+                text-decoration: underline;
+            }
+        }   
+    }
+    
+}   
+
+a:focus {
+    outline: 0;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+
+}
+
+/*=#left form=*/
+
+/*=right form=*/
+ 
+.right-title {
+    padding: 35px 0  0 35px;
+    h2 {
+        font-weight: 500;
+        @include fz(24);
+        line-height: 32px;
+        letter-spacing: -0.4px;
+        color: #1C1C1C;
+    }
+}
+
+.user-photo {
+    display: flex;
+    justify-content: start;
+    padding: 20px 0 0 35px;
+    .user-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .file {
+        padding-top: 11px;
+        width: 141px;
+        span {
+            @include fz(13);
+            line-height: 18px;
+            letter-spacing: -0.1px;
+            color: #969696;
+            margin-top: 5px;
+            display: block;
+        }
+        
+    }
 }
 
 
 
 
+.trash-but {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 11px;
+    margin-left: 7px;
+    span   {
+        @include fz(16);
+        color: #969696;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:hover span {
+        color: $theme-color;
+    }
+}
+
+.jq-file__name {
+    box-sizing: border-box;
+    width: 180px;
+    height: 30px;
+    border-radius: 4px;
+    background: #FFF;
+
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+    margin-bottom: 15px;
+    .name-reg, .email-reg {
+        width: 245px;
+    }
+    .name-reg {
+        margin-right: 10px;
+        margin-left: 34px;
+    }
+}
 
 
+.location-wrap2 {
+    display: flex;
+    justify-content: start;
+    .country2, .city2 {
+        width: 245px;
+    }
+    .country2 {
+        margin-left: 34px;
+        margin-right: 9px;
+    }
+}
 
+.user-phone {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+    .zip-code, .phone-number {
+        width: 245px;
+    }
+    .zip-code {
+        margin-right: 10px;
+        margin-left: 34px;
+    }
+}
+
+.btn-wrap2   {
+    margin-left: 34px;
+    padding-top: 20px;
+    .btn2    {
+        display: inline-block;
+        width: 150px;
+        height: 38px;
+        background-color: $theme-color;
+        @include fz(15);
+        font-weight: 500;
+        line-height: 22px;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: 'Roboto';
+        letter-spacing: -0.1px;
+        color: #fff;
+          &:hover {
+            background-color: #fff;
+            color: $theme-color;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid black;
+        }
+    }
+
+}
+
+.jq-selectbox {
+    width: 100%;
+    &__select {
+        height: 38px;
+        padding: 7px 10px 7px 10px;
+        border: 1px solid #E4E4E4;
+        border-bottom-color: #E4E4E4;
+        border-radius: 6px;
+        background: #fff;
+        font-family: 'Inter';
+        @include fz(15);
+        line-height: 22px;
+        color: $text-color;
+        box-shadow: none;
+        text-shadow: none;
+        &:hover {
+            background: #FFF;
+        }
+    }
+    &.focused .jq-selectbox__select {
+        outline: 0;
+        border: 1px solid $theme-color;
+        border-radius: 6px ;
+    }
+    &__trigger {
+        border-left: none;
+    }
+    &__trigger-arrow {
+        position: absolute;
+        top: 20px;
+        right: 14px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid #999;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid #999;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            transform: rotate(180deg);
+        }
+    }
+    .jq-selectbox__trigger-arrow:hover::after {
+        border-top-color: #1C1C1C;
+    }
+    li {
+        color: $text-color;
+        &.selected {
+            background-color: #E4E4E4;
+            color: $text-color;
+        }
+        &:hover {
+            background-color: $theme-color;
+            color: #FFF;
+        }
+    }
+    &__dropdown {
+        margin: 2px 0 0;
+        padding: 0;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        background: #FFF;
+        font-family: 'Inter';
+        @include fz(15);
+        line-height: 22px;
+        color: $text-color;
+        box-shadow: none;
+        overflow: hidden;
+    }
+}   
+
+
+.jq-file {
+    width: 138px;
+    height: 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+    &__browse {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        border-left: none;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: none;
+        font: 14px/32px Arial, sans-serif;
+        color: #333;
+        text-shadow: none;
+        display: none;
+    }
+    &__name {
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+        padding: 0 ;
+        border: 1px solid #E4E4E4;
+        border-bottom-color: #E4E4E4;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: none;
+        font: 0px/32px Arial, sans-serif;
+        color: #333;
+        outline: 0;
+    }
+}
+
+.jq-file.focused .jq-file__name {
+    outline: 0;
+    border: 1px solid $theme-color;
+    border-radius: 6px ;
+}
+    
 
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Style</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/plagins/formstyler/jquery.formstyler.css">
@@ -28,14 +28,136 @@
                         <label for="2name">Last Name</label>
                         <input type="text" id="2name">
                     </div>
-                    
-
+                </div>
+                <div class="email-field">
+                    <label for="user-email">E-mail</label>
+                    <div class="email-input">
+                        <input type="email"  name='email'   id="user-email">
+                        <span>We'll never share your email with anyone else.</span>
+                    </div>
                 </div>
 
+                <div class="gender">
+                    <div class="radio-wrap">
+                        <input type="radio" name="gender" value="male" id="male" checked>
+                        <label class="label-male" for="male">Male</label>
+                    </div>
+                        
+                    <div class="radio-wrap">
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="location-wrap">
+                    <div class="country">
+                        <label for="country-select">Country</label>
+                        <select name="location" id="country-select">
+                            <option value="">Select</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="England">England</option>
+                            <option value="Italy">Italy</option>
+                            <option value="USA">USA</option>
+                        </select> 
+                        
+                    </div>
+                    <div class="city">
+                        <label for="city-txt">City</label>
+                        <input type="text" id="city-text">
+                    </div>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="submit" class="btn1">
+                        Sign Up
+                    </button>
+                </div>
+
+                <div class="policy">
+                    <p>
+                        By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>&nbsp; and &nbsp;<a href="#">Privacy Policy</a> 
+                    </p>
+                </div>
+
+                <div class="footer1">
+                    <div class="footer1-text">
+                        <span>Have an account?</span>
+                        <a href="#">Log In</a>
+                    </div>
+                    
+                </div>
             </form>
         </div>
         <div class="form-right">
-            <form action="#" method="post" class="form2">
+            <form action="#" method="post" class="form2" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+                <div class="right-title">
+                    <h2>Profile</h2>
+                </div>
+                <div class="user-photo">
+                    <div class="user-img">
+                        <img src="assets/img/📷 Image.png" alt="User photo">
+                    </div>
+                    <div class="file">
+                        <label for="avatar"></label>
+                        <div class="file-select">
+                            <input type="file" id="avatar">
+                            <span>Up to 1 MB (300x300 px)</span>
+                        </div>
+                    </div>
+                    <div class="trash-but">
+                      <a href="#"><span class="icon-delete"></span></a>  
+                    </div>
+                </div>
+
+                <div class="user-info">
+                    <div class="name-reg">
+                        <label for="name-reg">Name</label>
+                        <input type="text" id="name-reg">
+                    </div>
+                    <div class="email-reg">
+                        <label for="email2">E-mail</label>
+                        <input type="email" id="email2">
+                    </div>
+                </div>
+
+                <div class="location-wrap2">
+                    <div class="country2">
+                        <label for="country-select2">Country</label>
+                        <select name="location2" id="country-select2">
+                            <option value="">Select</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="England">England</option>
+                            <option value="Italy">Italy</option>
+                            <option value="USA">USA</option>
+                        </select> 
+                        
+                    </div>
+                    <div class="city2">
+                        <label for="city-txt2">City</label>
+                        <input type="text" id="city-text2">
+                    </div>
+                </div>
+
+                <div class="user-phone">
+                    <div class="zip-code">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" id="zip">
+                    </div>
+                    <div class="phone-number">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+
+
+                <div class="btn-wrap2">
+                    <button type="submit" class="btn2">
+                        Update
+                    </button>
+                </div>
+              
+
+
 
             </form>
 
@@ -45,21 +167,7 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
     crossorigin="anonymous"></script>
     <script src="assets/plagins/formstyler/jquery.formstyler.min.js"></script> 
@@ -67,7 +175,7 @@
      (function($) {
 $(function() {
         
-    $('select').styler();
+    $('select, input[type="file"]').styler();
         
 });
 })(jQuery);</script>  
@@ -75,46 +183,3 @@ $(function() {
 </html>
 
 
-<!--<div class="container">
-        <form action="#" method="post">
-            <div class="form_row has-error">
-                <label for="name">Your name</label>
-                <div class="form-element">
-                    <input type="text" name="name" id="name">
-                </div>
-            </div>
-
-            <div class="form_row">
-                <label for="email">Your email</label>
-                <input type="email" name="email" id="email">
-            </div>
-
-            <div class="form_row">
-                <label for="password">Your email</label>
-                <input type="password" name="password" id="password">
-            </div>
-
-            <div class="form_row">
-                <label for="msg">Your email</label>
-                <textarea name="msg" id="msg"></textarea>
-            </div>
-
-            <div class="form_row">
-                <label for="skills">Skill</label>
-                <select name="skills" id="skills">
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="js">JS</option>
-                </select>
-            </div>
-
-            <div class="form_row">
-                <label for="msg">Your email</label>
-                <textarea name="msg" id="msg"></textarea>
-            </div>
-
-
-
-        </form>
-    </div>-->
-    
