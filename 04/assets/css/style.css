@@ -23,13 +23,16 @@ ul, ol {
 
 img {
     vertical-align: top;
- 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container  {
     width: 90%;
     max-width: 970px;
     margin: 0 auto;
+ 
 }
 
 #header {
@@ -55,7 +58,6 @@ img {
 .main-menu ul li a {
     text-decoration: none;
     color: #828282;
-
 }
 
 .main-menu ul li a:hover {
@@ -71,6 +73,28 @@ main {
 
 /*=Denis Novik*/
 
+
+
+
+.btn-hamb {
+    display: none;
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+    position: fixed;
+    top: 29px;
+    right: 10px;
+}
+
+.btn-hamb:hover {
+    transform: scale(1.05);
+}
+
+.img-mob {
+    display: none;
+}
 
 h1 {
     font-family: 'Gilroy Bold';
@@ -92,16 +116,16 @@ h3 {
 .novik-img {
     margin: 0 auto;
     text-align: center;
-    
 }
 
 
-/*=№Denis Novik*/
+
+
+/*#Denis Novik*/
 
 /*=About me*/
 
 .gray_bg    {
-
     background-color: #F6F6F6;
 }
 
@@ -117,7 +141,8 @@ h3 {
 
 .bio    {
     text-align: center;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
     padding-top: 45px; 
     padding-bottom: 100px;
@@ -156,48 +181,35 @@ h3 {
     letter-spacing: 0.02em
 }
 
+.program-pic {
+    width: 81px;
+    margin: 0 auto 25px;
+}
+
+.program-pic.last {
+    width: 55px;
+}
+
 
 .skills-list {
-    font-size: 0;
     margin-top: 45px;
     margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.skills-list li {
-    display: inline-block;
-    font-size: 18px;
-    margin-right: 97px;
-    width: 169.5px;
-    height: 230px;
+.skill-box {
     text-align: center;
-}
-
-.skills-list li.last {
-    margin-right: 0;
+    width: 170px;
 }
 
 .raiting-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-size: 28px;
 }
-
-.icon-star-full {
-    font-size: 26px;
-}
-
-.raiting-list img {
-    margin-right: 8px;
-    display: inline-block;
-}
-
-.raiting-list img:last-child {
-    margin-right: 0px;
-}
-
-
-
 .gray_ic {
     opacity: 0.25;
 }
@@ -206,8 +218,6 @@ h3 {
 
 /*=PORTFOLIO=*/
 
-
-
 .fs_pic {
     margin-top: 45px;
 }
@@ -215,7 +225,6 @@ h3 {
 .text-comp{
     margin-top: 40px;
     text-align: center;
-    
 }
 
 .text-comp a {
@@ -225,7 +234,6 @@ h3 {
 
 .text-comp a:hover {
     color: #070707;
-
 }
 
 .reebraun_pic {
@@ -242,8 +250,6 @@ h3 {
 
 .contacts {
     margin-top: 100px;
-   
-    
 }
 
 .conts {
@@ -288,30 +294,57 @@ h3 {
     color: #070707;
 }
 
-
 .social-list {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.social-list li {
-    display: inline-block;
-    margin-right: 50px;
-}
-
-.social-list li:last-child {
-    margin-right: 0;
-}
-
-.social-list li a {
-    text-decoration: none;
+    width: 310px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 30px;
+}
 
+.social-icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #070707;
+}
+
+.social-icon a {
+    text-decoration: none;
+    color:  #070707;
+}
+
+.social-icon a:hover {
+    color: orangered;
+}
+
+.social-icon:hover {
+    border-color: orangered;
+}
+
+.icon1, .icon3 {
+    font-size: 25px;
+    border: 3px solid #070707;
+    border-radius: 6px;
 }
 
 
+.icon1 a {
+    padding-top: 3px;
+    padding-left: 3px;
+    display: block;
+}
+
+.icon2, .icon4 {
+    font-size: 40px;
+}
+
+.icon3 a {
+    padding-top: 4px;
+    padding-left: 1px;
+    display: block;
+}
 
 .endtxt {
     font-weight: 400;
@@ -323,34 +356,5 @@ h3 {
     padding-bottom: 100px;
 }
 
-.icon-linkedin2 {
-    border: 4px solid #070707;
-    font-size: 32px;
-    color: #070707;
-    border-radius: 7px;
-    padding: 4px;
-}
 
-.icon-instagram {
-    font-size: 48px;
-    color: #070707;
-    position: relative;
-    top: 7px;
-}
-
-
-.icon-behance {
-    border: 4px solid #070707;
-    font-size: 32px;
-    color: #070707;
-    border-radius: 7px;
-    padding: 4px;
-}
-
-.icon-dribbble {
-    font-size: 48px;
-    color: #070707;
-    position: relative;
-    top: 7px;
-}
 /*=#Footer=*/

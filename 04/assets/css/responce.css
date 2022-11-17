@@ -1,0 +1,93 @@
+
+
+@media screen and (max-width: 860px) {
+    .skills-list {
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    
+    }
+    .text_skills {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    #header {
+        display: none;
+    }
+    .btn-hamb {
+        display: block;
+    }
+}   
+
+@media screen and (max-width:430px) {
+    .skills-list {
+        margin-top: 45px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .titles {
+        padding-top: 50px;
+    }
+    .contacts {
+        margin-top: 50px;
+    }
+
+    .braun_text {
+        padding-bottom: 50px;
+    }
+    .cap_name {
+        margin-bottom: 40px;
+    }
+    .social-list {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+   
+    
+}
+
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 47px;
+        line-height: 58px;
+        width: 135px;
+    }
+    
+    .img-mob {
+        display: block;
+    }
+    .img-full {
+        display: none;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:330px) {
+   body {
+    font-size: 16px;
+   }
+
+   .social-list {
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        max-width: 310px;
+        width: 90%;
+        
+    }
+
+
+} 
