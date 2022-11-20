@@ -96,4 +96,7 @@
         max-width: 310px;
         width: 90%;
     }
+    .hamburger {
+        margin-left: 125px;
+    }
 } 
