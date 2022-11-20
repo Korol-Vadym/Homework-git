@@ -7,13 +7,39 @@
     <title>Denis Novik</title>
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responce.css"> <!--Повинен бути останнім-->
 </head>
 <body>
-    <button type="button" class="btn-hamb">
-        <img src="assets/images/hamburger/hamb.png" alt="hamb">
+    <button id="hamb-btn" class="hamburger hamburger--spin btn-hamb" type="button" onclick="toggleMenu()">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
     </button>
+
+
+    <div id="mobile-menu" >
+        <nav id="mobile-menu-list">
+            
+            <ul>
+                <li><a href="#denis-novik">Home</a> 
+                    <button class="hamburger hamburger--spin is-active" type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="shadow" onclick="toggleMenu()"></div>
 
     <header id="header">
         <div class="container">
@@ -164,6 +190,15 @@
             </div>
             <p class="endtxt">Like me on <br> LinkedIn, Instagram, Behance, <br> Dribble</p>
         </div>
-    </footer>    
+    </footer>
+    
+    <script>
+        function toggleMenu(){
+            document.getElementById("mobile-menu").classList.toggle("open")
+            document.getElementById("hamb-btn").classList.toggle("is-active")
+            document.getElementById("shadow").classList.toggle("show")
+        }
+    </script>
+
 </body>
 </html>

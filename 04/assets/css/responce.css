@@ -71,6 +71,17 @@
     .btn {
         width: 100%;
     }
+
+    #mobile-menu {
+        transform: translateX(-370px);
+        width: 100%;
+    }
+    .hamburger {
+        margin-left: 180px;
+    }
+    
+    
+
 }
 
 @media screen and (max-width:330px) {
