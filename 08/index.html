@@ -10,15 +10,43 @@
     <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responce.css">
 </head>
 <body>
+    <button id="hamb-btn" class="hamburger hamburger--spin btn-hamb" type="button" onclick="toggleMenu()">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <div id="mobile_menu">
+        <nav id="mobile_menu_list">
+            <ul>
+                <li><a href="#">Product</a>
+                    <button class="hamburger hamburger--spin is-active" type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    <div id="shadow" onclick="toggleMenu()"></div>
+
+
     <header id="header">
         <div class="container header">
             <div class="img-logo">
                 <img src="assets/img/Logo-productly.png" class="logo" alt="logo">
             </div>
+
             
             <nav class="main-menu">
                 <ul class="menu-list">
@@ -213,5 +241,14 @@
             </form>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu(){
+            document.getElementById("mobile_menu").classList.toggle("open")
+            document.getElementById("hamb-btn").classList.toggle("is-active")
+            document.getElementById("shadow").classList.toggle("show")
+        }
+    </script>
+
 </body>
 </html>

@@ -100,6 +100,21 @@
         max-width: 270px;
     }
 
+    .header {
+        display: flex;
+        justify-content: start;
+        gap: 140px;
+        width: 90%;
+        max-width: 840px;
+    }
+
+    #hamb-btn {
+        display: block;
+        position: fixed;
+        top: 12px;
+        right: 16px;
+    }    
+
 }   
 
 @media screen and (max-width: 800px) {
@@ -152,6 +167,10 @@
         width: 100%;
         max-width: 270px;
     }
+
+    .header {
+        gap: 100px;
+    }
 } 
 
 @media screen and (max-width: 700px) {
@@ -173,6 +192,9 @@
     .form {
         margin: 0 auto;
         text-align: center;
+    }
+    .header {
+        gap: 40px;
     }
 }
 
@@ -231,7 +253,17 @@
     .items-list {
         gap: 20px;
     }
+
+    .header {
+        gap: 20px;
+    }
     
+}
+
+@media screen and (max-width: 420px) {
+    #hamb-btn {
+        top: 60px;
+    } 
 }
 
 @media screen and (max-width: 400px) {
